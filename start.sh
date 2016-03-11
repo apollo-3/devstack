@@ -15,3 +15,6 @@ source /home/stack/devstack/openrc admin
 iptables -X
 iptables -F
 sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+cd ../
+#wget https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-disk1.img
+#glance image-create --name "ubuntu-trusty" --disk-format qcow2 --container-format bare --is-public True --visibility public --protected True --file trusty-server-cloudimg-amd64-disk1.img --progress
